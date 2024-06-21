@@ -23,7 +23,9 @@ Write a driver and use GPIO pins to implement a scrolling LED display of your st
 Goal:Implementing communication between user space and kernel space.  
 
 ### LAB4
+Please write a name marquee program on Raspberry Pi. Using a writer program on Raspberry Pi, write English letters into a driver. A reader program will read these letters from the driver. Finally, transmit the letters via a socket to a program named seg.py running on a VM, which will display the letters on a sixteen-segment display (GUI).  
 
+Goal:Implementing communication between user space and kernel space.  
 
 ### LAB5
 Please write a socket program on a VM. First, start the server program on the VM, which will wait for the client program to connect. Once the connection is established, the server will transmit ASCII art of a train to the client via the socket. As a result, on the client-side terminal, you will see a train rushing from right to left.  
