@@ -63,22 +63,22 @@ Goal: use threads,Semaphores and Timer to implement a multi-client version of a 
 ## Final Project : Smart parking management system
 
 ### Contributor 
-School : National Yang Ming Chiao Tung University 
-Department : Institute of Electrical and Control Engineering
+School : National Yang Ming Chiao Tung University   
+Department : Institute of Electrical and Control Engineering  
 Student ID : 312511068、312512013、312512032、312512039  
 
 ###  Introduce
   Simulate a smart parking management system and use what you have learned in this course to realize intelligent and automated management of parking lots, improve parking efficiency, reduce traffic congestion, and improve the urban traffic environment.  
 
 The vehicle part will be divided into fuel vehicles and electric vehicles. There will be different parking areas and charging standards according to different vehicles, and the following functions will be implemented:  
-1. Parking space guidance  
-2. (Payment) Check the parking location, time and amount according to the license plate  
-3. Confirm whether the car left the venue within a specific time after payment  
-4. Record license plate, parking space, entry time, payment time, departure time, payment amount, and total assets  
+1. Parking space guidance.  
+2. Check the parking location, time and amount according to the license plate.  
+3. Confirm whether the car left the venue within a specific time after payment.  
+4. Record license plate, parking space, entry time, payment time, departure time, payment amount, and total assets.    
 ### Hardware
-Led : Parking space display (light: parked, dark: free)
-WebCam : For license plate reading at exits and entrances on both sides
-Raspberry Pi 3 Model B+ : As a server, it handles license plate recognition, amount calculation, I/O control, parking space status display, etc.
+Led : Parking space display (light: parked, dark: free).  
+WebCam : For license plate reading at exits and entrances on both sides.  
+Raspberry Pi 3 Model B+ : As a server, it handles license plate recognition, amount calculation, I/O control, parking space status display, etc. 
 
 ### What we used that learned in this course
 Semaphore
@@ -90,14 +90,15 @@ Socket
 Timer 
 Muti-Process
 Socket
+
 ### Program
 
-#### driver.c:
+#### driver.c 
 
 #### server.c 
 
 
-#### client.c
+#### client.c 
 
 
 
