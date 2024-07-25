@@ -1,28 +1,28 @@
 # NYCU_2023_ECE_Embedded Operating Systems
 
-Hardware : Raspberry Pi 3 Model B+
+Hardware : Raspberry Pi 3 Model B+   
 Environment : ubuntu-22.04.0  
 Linux version : 6.1.77  
 
 
 Course Overview :
-1. Introduction to Embedded Systems, Embedded OS and Real-time OS
-- Kernel objects and RTOS services
-2. Multitasking
-- Task, process, thread, scheduler
-3. Communication & Synchronization
-- Semaphores, mutex, message queues and pipeline
-4. Interrupt
-- Signal, timer and timer services
-5. I/O & Memory
-- Socket, I/O Subsystem, Memory
+1. Introduction to Embedded Systems,Embedded OS and Real-time OS  
+- Kernel objects and RTOS services  
+2. Multitasking  
+- Task, process, thread, scheduler  
+3. Communication & Synchronization  
+- Semaphores, mutex, message queues and pipeline  
+4. Interrupt  
+- Signal, timer and timer services  
+5. I/O & Memory  
+- Socket, I/O Subsystem, Memory  
 
 
 
-## LAB
-### LAB3
-Write a driver and use GPIO pins to implement a scrolling LED display of your student ID on a Raspberry Pi.  
-
+## LAB  
+### LAB3  
+Write a driver and use GPIO pins to implement a scrolling LED display of your student ID on a Raspberry Pi.    
+ 
 Goal:Implementing communication between user space and kernel space.  
 
 ### LAB4
@@ -81,27 +81,26 @@ WebCam : For license plate reading at exits and entrances on both sides.
 Raspberry Pi 3 Model B+ : As a server, it handles license plate recognition, amount calculation, I/O control, parking space status display, etc. 
 
 ### What we used that learned in this course
-Semaphore
-Signal
-Share memory
-File descriptor
-Muti-Process
-Socket
-Timer 
-Muti-Process
-Socket
+Semaphore :  To avoid race conditions, use semaphores to protect these shared resources.  
+Signal : Use signals to release processes upon completion to avoid the creation of zombie processes. Also, ensure that when a process ends, it releases the occupied shared memory and semaphores.    
+Share memory :  Allowing multiple processes to share information(data).  
+File descriptor : Communicate with the kernel space.  
+Muti-Process : simultaneously handle data passed through multiple I/O .  
+Socket : Communicate between Client and Server.    
 
 ### Program
 
 #### driver.c 
+Using File Descriptors for Communication Between User Space and Kernel Space to Control an LED Simulating Parking Space Status
+
 
 #### server.c 
-
+Use multi-process handling to process the multiple vehicle behaviors (entering, exiting, paying) from client.py through sockets, and based on the situation, respond to client.py via socket or use file descriptors to transmit parking space information to driver.c. Additionally, use shared memory to access vehicle data and parking space data, allowing multiple processes to share this information. To avoid race conditions, use semaphores to protect these shared resources. Use signals to release processes upon completion to avoid the creation of zombie processes. Also, ensure that when a process ends, it releases the occupied shared memory and semaphores.
 
 #### client.c 
+Use multi-processing to simultaneously read information from multiple cameras, identify Regions of Interest (ROI) to reduce computation, and use Tesseract to recognize license plate numbers. Simulate vehicle entry, exit, and payment, and communicate vehicle information with server.c using sockets.
 
-
-
+### 
 
 
 
