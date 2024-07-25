@@ -25,20 +25,28 @@ Write a driver and use GPIO pins to implement a scrolling LED display of your st
  
 Goal:Implementing communication between user space and kernel space.  
 
+[Watch the video on YouTube](https://www.youtube.com/watch?v=6WvUYMYEdCI)  
+
 ### LAB4
 Please write a name marquee program on Raspberry Pi. Using a writer program on Raspberry Pi, write English letters into a driver. A reader program will read these letters from the driver. Finally, transmit the letters via a socket to a program named seg.py running on a VM, which will display the letters on a sixteen-segment display (GUI).  
 
 Goal:Implementing communication between user space and kernel space.  
+
+[Watch the video on YouTube](https://www.youtube.com/watch?v=RgY5gMldgQA)   
 
 ### LAB5
 Please write a socket program on a VM. First, start the server program on the VM, which will wait for the client program to connect. Once the connection is established, the server will transmit ASCII art of a train to the client via the socket. As a result, on the client-side terminal, you will see a train rushing from right to left.  
 
 Goal:Learning how to create a socket server and utilize fork() to spawn multiple processes for achieving multi-client connections.  
 
+[Watch the video on YouTube](https://youtu.be/6OvbEIKUHbo)   
+
 ### LAB6
 Please write a socket program on a VM. Multiple clients will simultaneously connect to perform deposit and withdrawal operations on the same account. The server-side code should handle race conditions effectively to prevent financial losses for the clients due to concurrent access. 
 
 Goal:Learning how to protect resources using semaphores.  
+
+[Watch the video on YouTube](https://youtu.be/X9s_5my5Bu8)   
 
 ### LAB7
 
@@ -46,6 +54,7 @@ Please write a Mastermind game program on a VM. The game consists of two parts: 
 
 Goal: Learning how to transfer data using shared memory and synchronize processes using signals.  
 
+[Watch the video on YouTube](https://youtu.be/euIDHU6crVU)   
 
 ## Homework
 ### HW1
