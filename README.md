@@ -75,6 +75,10 @@ The vehicle part will be divided into fuel vehicles and electric vehicles. There
 2. Check the parking location, time and amount according to the license plate.  
 3. Confirm whether the car left the venue within a specific time after payment.  
 4. Record license plate, parking space, entry time, payment time, departure time, payment amount, and total assets.    
+
+[Watch the video on YouTube](https://youtu.be/_s5z6sf62Iw)  
+
+
 ### Hardware
 Led : Parking space display (light: parked, dark: free).  
 WebCam : For license plate reading at exits and entrances on both sides.  
