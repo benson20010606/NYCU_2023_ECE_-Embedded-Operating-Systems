@@ -110,7 +110,7 @@ Using File Descriptors for Communication Between User Space and Kernel Space to 
 #### server.c 
 Use multi-process handling to process the multiple vehicle behaviors (entering, exiting, paying) from client.py through sockets, and based on the situation, respond to client.py via socket or use file descriptors to transmit parking space information to driver.c. Additionally, use shared memory to access vehicle data and parking space data, allowing multiple processes to share this information. To avoid race conditions, use semaphores to protect these shared resources. Use signals to release processes upon completion to avoid the creation of zombie processes. Also, ensure that when a process ends, it releases the occupied shared memory and semaphores.
 
-#### client.c 
+#### client.py
 Use multi-processing to simultaneously read information from multiple cameras, identify Regions of Interest (ROI) to reduce computation, and use Tesseract to recognize license plate numbers. Simulate vehicle entry, exit, and payment, and communicate vehicle information with server.c using sockets.
 
 ### 
