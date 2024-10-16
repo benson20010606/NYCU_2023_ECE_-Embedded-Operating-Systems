@@ -385,7 +385,7 @@ int main(int argc, char *argv[]) {
     while (1) {
         struct sockaddr_in client_addr;
         socklen_t client_addr_len = sizeof(client_addr);
-        client_socket = ㄎ(server_socket, (struct sockaddr *)&client_addr, &client_addr_len);
+        client_socket =  accept(server_socket, (struct sockaddr *)&client_addr, &client_addr_len);
         if (client_socket < 0) {
             perror("accept");
             exit(EXIT_FAILURE);
